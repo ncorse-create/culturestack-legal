@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Culture Stack — Legal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #faf9f5; --surface: #fff; --text: #1a1a18; --soft: #55534d;
+    --mute: #85827a; --rule: #e3e0d6; --accent: #a8811a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121211; --surface: #1b1b19; --text: #f0eee7; --soft: #b5b1a6;
+      --mute: #86837a; --rule: #2e2d29; --accent: #e8c84a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 20px 80px; min-height: 100vh;
+    background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding-top: 84px; }
+  .eyebrow {
+    font: 600 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: .14em; text-transform: uppercase; color: var(--mute); margin: 0 0 14px;
+  }
+  h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 12px; letter-spacing: -.025em; }
+  .lede { color: var(--soft); margin: 0 0 40px; font-size: 1.05rem; }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 20px 24px; margin-bottom: 12px;
+    transition: border-color .15s ease;
+  }
+  a.card:hover { border-color: var(--accent); }
+  a.card strong { display: block; font-size: 1.05rem; margin-bottom: 4px; }
+  a.card span { color: var(--soft); font-size: .93rem; }
+  footer { margin-top: 48px; color: var(--mute); font-size: .875rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Culture Stack</p>
+  <h1>Legal</h1>
+  <p class="lede">
+    A backlog for the music, games, books, films and shows you mean to get to.
+  </p>
+
+  <a class="card" href="./privacy.html">
+    <strong>Privacy Policy</strong>
+    <span>What the app stores, what it never touches, and how to delete all of it.</span>
+  </a>
+
+  <a class="card" href="./terms.html">
+    <strong>Terms of Use</strong>
+    <span>Licence, subscription terms, and the rules for the social features.</span>
+  </a>
+
+  <footer>
+    <p>
+      Persue Apps LLC · <a href="mailto:ncorse@icloud.com">ncorse@icloud.com</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
