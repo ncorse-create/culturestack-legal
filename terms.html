@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Terms of Use — Culture Stack</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Licence, subscription terms, and the rules for the social features in Culture Stack.">
 <style>
   :root {
     --bg: #faf9f5; --surface: #fff; --text: #1a1a18; --soft: #55534d;
@@ -39,11 +40,23 @@
   strong { color: var(--text); font-weight: 600; }
   a { color: var(--accent); }
   .updated { color: var(--mute); font-size: .875rem; margin: 0; }
+  .summary {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 22px 24px; margin: 0 0 8px;
+  }
+  .summary h2 { border: none; padding: 0; margin: 0 0 12px; font-size: 1rem; }
+  .summary ul, .summary p { margin: 0; }
+  .summary ul { padding-left: 20px; }
   .callout {
     background: var(--surface); border: 1px solid var(--rule);
     border-radius: 12px; padding: 20px 24px; margin: 20px 0;
   }
   .callout h3 { margin-top: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .92rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--text); font-weight: 600; }
+  td { color: var(--soft); }
+  .scroll { overflow-x: auto; }
   footer {
     margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--rule);
     color: var(--mute); font-size: .875rem;
@@ -83,7 +96,7 @@
 <p>Culture Stack is free to use. Some features require Culture Stack Pro:</p>
 <ul>
   <li><strong>Monthly</strong> — US$1.99 per month, automatically renewing.</li>
-  <li><strong>Lifetime</strong> — US$19.99, a one-time purchase, not a subscription.</li>
+  <li><strong>Lifetime</strong> — US$29.99, a one-time purchase, not a subscription.</li>
 </ul>
 <p>Prices are shown in your local currency in the app and may vary by region and over time.</p>
 
@@ -167,17 +180,15 @@
   respective rights holders, and Culture Stack claims no ownership of them. We are grateful to:
 </p>
 <ul>
-  <li>
-    <strong>TMDB</strong> — this product uses the TMDB API but is <em>not endorsed or certified by
-    TMDB</em>.
-  </li>
   <li><strong>IGDB</strong> and Twitch, for game data.</li>
   <li><strong>MusicBrainz</strong>, <strong>Cover Art Archive</strong> and
       the Apple iTunes Search API, for music data.</li>
   <li><strong>Open Library</strong> and the Internet Archive, for book data.</li>
   <li><strong>TVmaze</strong> and <strong>TheTVDB</strong>, for television data. TVmaze data is used
       under CC BY-SA; TheTVDB is credited in the app under Settings &rsaquo; Acknowledgements.</li>
-  <li><strong>HowLongToBeat</strong>, for game length data.</li>
+  <li><strong>Google Books</strong>, for book availability.</li>
+  <li><strong>Wikidata</strong> (CC0) and <strong>Wikipedia</strong> (CC BY-SA), for credits,
+      background and streaming availability.</li>
 </ul>
 <p>
   These services are independent of us. We cannot guarantee that their data is accurate, complete
@@ -254,7 +265,7 @@
 <footer>
   <p>
     Persue Apps LLC · <a href="mailto:ncorse@icloud.com">ncorse@icloud.com</a><br>
-    <a href="./privacy.html">Privacy Policy</a> · <a href="./">Home</a>
+    <a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Use</a> · <a href="./support.html">Support</a> · <a href="./">Home</a>
   </p>
 </footer>
 

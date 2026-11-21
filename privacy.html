@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Privacy Policy — Culture Stack</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="What Culture Stack stores, what it never touches, and how to delete all of it.">
 <style>
   :root {
     --bg: #faf9f5; --surface: #fff; --text: #1a1a18; --soft: #55534d;
@@ -44,7 +45,13 @@
     border-radius: 12px; padding: 22px 24px; margin: 0 0 8px;
   }
   .summary h2 { border: none; padding: 0; margin: 0 0 12px; font-size: 1rem; }
-  .summary ul { margin: 0; padding-left: 20px; }
+  .summary ul, .summary p { margin: 0; }
+  .summary ul { padding-left: 20px; }
+  .callout {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 20px 24px; margin: 20px 0;
+  }
+  .callout h3 { margin-top: 0; }
   table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .92rem; }
   th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
   th { color: var(--text); font-weight: 600; }
@@ -54,13 +61,6 @@
     margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--rule);
     color: var(--mute); font-size: .875rem;
   }
-  .flag {
-    background: #fff3cd; border: 1px solid #e0c86a; color: #5c4a12;
-    border-radius: 8px; padding: 12px 16px; font-size: .9rem;
-  }
-  @media (prefers-color-scheme: dark) {
-    .flag { background: #3a3316; border-color: #7a6a2a; color: #f0e2b0; }
-  }
 </style>
 </head>
 <body>
@@ -69,7 +69,7 @@
 <header>
   <p class="eyebrow">Culture Stack</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective 28 July 2026</p>
+  <p class="updated">Effective 20 November 2026</p>
 </header>
 
 <div class="summary">
@@ -98,15 +98,15 @@
 </p>
 <p>
   That is your private iCloud storage. We have no access to it, no ability to read it, and no
-  server that receives it. If you turn iCloud off, your library simply stays local to the device.
+  server that receives it, unless you switch on library sharing (section 3). If you turn iCloud off, your library simply stays local to the device.
   Apple's handling of iCloud data is governed by
   <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.
 </p>
 
 <h2>3. The social features are opt-in</h2>
 <p>
-  Culture Stack has an optional social layer — a friend feed, reactions, comments, circles and
-  profiles. <strong>None of it runs until you sign in.</strong> If you never sign in, no account is
+  Culture Stack has an optional social layer — a friend feed, posts and polls, reactions, comments,
+  circles with their chat, profiles and optional library sharing. <strong>None of it runs until you sign in.</strong> If you never sign in, no account is
   created and nothing about you leaves your device except the metadata lookups described in
   section 4.
 </p>
@@ -148,6 +148,28 @@
     <td>People who can see that post</td>
   </tr>
   <tr>
+    <td>Posts you make — lists, rankings and polls — and the votes you cast in polls</td>
+    <td>To show them in the friend feed</td>
+    <td>People who follow you</td>
+  </tr>
+  <tr>
+    <td>Messages you send in a circle</td>
+    <td>To deliver them to the circle</td>
+    <td>Members of that circle</td>
+  </tr>
+  <tr>
+    <td>Your finished shelf, only if you switch on library sharing — for each finished item the
+        title, creator, year, cover image address, genres, your score, the date you finished it
+        and any review or notes you wrote on it</td>
+    <td>So people who follow you can browse what you have finished</td>
+    <td>People who follow you</td>
+  </tr>
+  <tr>
+    <td>Reports you file about a profile or comment</td>
+    <td>So we can review and act on them</td>
+    <td>Only us</td>
+  </tr>
+  <tr>
     <td>Who you follow and who follows you</td>
     <td>To assemble your feed</td>
     <td>You and the other person</td>
@@ -155,9 +177,10 @@
 </table>
 </div>
 <p>
-  Your <em>whole library is never uploaded</em>. Only the specific items you publish an activity
-  for are sent. Private notes, unrated items and anything still sitting in your queue stay on your
-  device.
+  Library sharing is <em>off until you turn it on</em>. While it is off, only the specific items
+  you publish an activity for are sent, and private notes and everything else stay on your device.
+  When it is on, your finished items are copied as listed above; anything still sitting in your
+  queue is never shared. Turning library sharing off deletes the shared copy.
 </p>
 
 <h2>4. Looking up cover art and details</h2>
@@ -168,10 +191,11 @@
 </p>
 <ul>
   <li>Apple iTunes Search, MusicBrainz and Cover Art Archive — music</li>
-  <li>IGDB (via Twitch) and HowLongToBeat — games</li>
-  <li>Open Library — books</li>
-  <li>TMDB — films</li>
+  <li>IGDB (via Twitch) — games</li>
+  <li>Open Library and Google Books — books</li>
+  <li>Apple iTunes Search — films</li>
   <li>TVmaze and TheTVDB — television</li>
+  <li>Wikidata and Wikipedia — credits, background and where a title is streaming</li>
 </ul>
 <p>
   These requests carry no account identifier, no device identifier and no advertising ID. Each
@@ -284,7 +308,7 @@
 <footer>
   <p>
     Persue Apps LLC · <a href="mailto:ncorse@icloud.com">ncorse@icloud.com</a><br>
-    <a href="./terms.html">Terms of Use</a> · <a href="./">Home</a>
+    <a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Use</a> · <a href="./support.html">Support</a> · <a href="./">Home</a>
   </p>
 </footer>
 
